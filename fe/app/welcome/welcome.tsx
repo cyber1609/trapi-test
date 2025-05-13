@@ -1,5 +1,7 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
+import { LocationDemoForm } from "./LocationDemoForm";
+import { BookingForm } from "./BookingForm";
 
 export function Welcome() {
   return (
@@ -19,6 +21,14 @@ export function Welcome() {
             />
           </div>
         </header>
+        <div className="max-w-[350px] w-full space-y-6 px-4">
+          <h2 className="text-xl font-bold mb-2">Demo: Booking Form</h2>
+          <BookingForm />
+        </div>
+        <div className="max-w-[350px] w-full space-y-6 px-4">
+          <h2 className="text-xl font-bold mb-2">Demo: Location Select</h2>
+          <LocationDemoForm />
+        </div>
         <div className="max-w-[300px] w-full space-y-6 px-4">
           <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
             <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
